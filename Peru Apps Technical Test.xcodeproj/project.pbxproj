@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370AEC0724B2FBE80007898B /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370AEC0624B2FBE80007898B /* MovieDetailViewController.swift */; };
 		371A6CDD24AFEA3E0018889C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6CDC24AFEA3E0018889C /* AppDelegate.swift */; };
 		371A6CDF24AFEA3E0018889C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6CDE24AFEA3E0018889C /* SceneDelegate.swift */; };
 		371A6CE124AFEA3E0018889C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6CE024AFEA3E0018889C /* ViewController.swift */; };
@@ -14,7 +15,22 @@
 		371A6CE624AFEA400018889C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371A6CE524AFEA400018889C /* Assets.xcassets */; };
 		371A6CE924AFEA400018889C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371A6CE724AFEA400018889C /* LaunchScreen.storyboard */; };
 		371A6CF424AFEA410018889C /* Peru_Apps_Technical_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6CF324AFEA410018889C /* Peru_Apps_Technical_TestTests.swift */; };
-		371A6CFF24AFEA410018889C /* Peru_Apps_Technical_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6CFE24AFEA410018889C /* Peru_Apps_Technical_TestUITests.swift */; };
+		371A6D0D24AFF9000018889C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D0C24AFF9000018889C /* LoginViewController.swift */; };
+		371A6D1324B009E80018889C /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1224B009E80018889C /* LoginUseCase.swift */; };
+		371A6D1724B00ACC0018889C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1624B00ACC0018889C /* User.swift */; };
+		371A6D1A24B00B510018889C /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1924B00B510018889C /* LoginRepositoryProtocol.swift */; };
+		374EDDD824B1705E00AEA3F2 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDD724B1705E00AEA3F2 /* MovieTableViewController.swift */; };
+		374EDDDA24B1722800AEA3F2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDD924B1722800AEA3F2 /* MovieTableViewCell.swift */; };
+		374EDDDE24B189EE00AEA3F2 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDDD24B189EE00AEA3F2 /* MoviesRepository.swift */; };
+		374EDDE324B18A6E00AEA3F2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDE224B18A6E00AEA3F2 /* Movie.swift */; };
+		374EDDE624B18D5700AEA3F2 /* MovieRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDE524B18D5700AEA3F2 /* MovieRepositoryProtocol.swift */; };
+		374EDDE824B18ED000AEA3F2 /* MovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDE724B18ED000AEA3F2 /* MovieUseCase.swift */; };
+		374EDDEA24B199CB00AEA3F2 /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDE924B199CB00AEA3F2 /* UserLoginResponse.swift */; };
+		374EDDED24B19C7600AEA3F2 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 374EDDEC24B19C7600AEA3F2 /* KeychainSwift */; };
+		3769C6E524B0F3A300D22528 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E811AF24B0DCDB00804014 /* LoginRepository.swift */; };
+		3769C6E724B0F54700D22528 /* Login_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C6E624B0F54700D22528 /* Login_Tests.swift */; };
+		3769C6E824B0F5BA00D22528 /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1924B00B510018889C /* LoginRepositoryProtocol.swift */; };
+		37E811B024B0DCDB00804014 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E811AF24B0DCDB00804014 /* LoginRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +41,10 @@
 			remoteGlobalIDString = 371A6CD824AFEA3E0018889C;
 			remoteInfo = "Peru Apps Technical Test";
 		};
-		371A6CFB24AFEA410018889C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371A6CD124AFEA3E0018889C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 371A6CD824AFEA3E0018889C;
-			remoteInfo = "Peru Apps Technical Test";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370AEC0624B2FBE80007898B /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		371A6CD924AFEA3E0018889C /* Peru Apps Technical Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peru Apps Technical Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		371A6CDC24AFEA3E0018889C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		371A6CDE24AFEA3E0018889C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +56,19 @@
 		371A6CEF24AFEA410018889C /* Peru Apps Technical TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peru Apps Technical TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		371A6CF324AFEA410018889C /* Peru_Apps_Technical_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peru_Apps_Technical_TestTests.swift; sourceTree = "<group>"; };
 		371A6CF524AFEA410018889C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		371A6CFA24AFEA410018889C /* Peru Apps Technical TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peru Apps Technical TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		371A6CFE24AFEA410018889C /* Peru_Apps_Technical_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peru_Apps_Technical_TestUITests.swift; sourceTree = "<group>"; };
-		371A6D0024AFEA410018889C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371A6D0C24AFF9000018889C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		371A6D1224B009E80018889C /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		371A6D1624B00ACC0018889C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		371A6D1924B00B510018889C /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		374EDDD724B1705E00AEA3F2 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		374EDDD924B1722800AEA3F2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		374EDDDD24B189EE00AEA3F2 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		374EDDE224B18A6E00AEA3F2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		374EDDE524B18D5700AEA3F2 /* MovieRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryProtocol.swift; sourceTree = "<group>"; };
+		374EDDE724B18ED000AEA3F2 /* MovieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUseCase.swift; sourceTree = "<group>"; };
+		374EDDE924B199CB00AEA3F2 /* UserLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
+		3769C6E624B0F54700D22528 /* Login_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Tests.swift; sourceTree = "<group>"; };
+		37E811AF24B0DCDB00804014 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374EDDED24B19C7600AEA3F2 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		371A6CEC24AFEA410018889C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		371A6CF724AFEA410018889C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +95,6 @@
 			children = (
 				371A6CDB24AFEA3E0018889C /* Peru Apps Technical Test */,
 				371A6CF224AFEA410018889C /* Peru Apps Technical TestTests */,
-				371A6CFD24AFEA410018889C /* Peru Apps Technical TestUITests */,
 				371A6CDA24AFEA3E0018889C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +104,6 @@
 			children = (
 				371A6CD924AFEA3E0018889C /* Peru Apps Technical Test.app */,
 				371A6CEF24AFEA410018889C /* Peru Apps Technical TestTests.xctest */,
-				371A6CFA24AFEA410018889C /* Peru Apps Technical TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +111,8 @@
 		371A6CDB24AFEA3E0018889C /* Peru Apps Technical Test */ = {
 			isa = PBXGroup;
 			children = (
+				371A6D0E24B005640018889C /* Login */,
+				374EDDD424B16FFE00AEA3F2 /* Movies */,
 				371A6CDC24AFEA3E0018889C /* AppDelegate.swift */,
 				371A6CDE24AFEA3E0018889C /* SceneDelegate.swift */,
 				371A6CE024AFEA3E0018889C /* ViewController.swift */,
@@ -113,19 +127,166 @@
 		371A6CF224AFEA410018889C /* Peru Apps Technical TestTests */ = {
 			isa = PBXGroup;
 			children = (
+				3769C6E624B0F54700D22528 /* Login_Tests.swift */,
 				371A6CF324AFEA410018889C /* Peru_Apps_Technical_TestTests.swift */,
 				371A6CF524AFEA410018889C /* Info.plist */,
 			);
 			path = "Peru Apps Technical TestTests";
 			sourceTree = "<group>";
 		};
-		371A6CFD24AFEA410018889C /* Peru Apps Technical TestUITests */ = {
+		371A6D0E24B005640018889C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				371A6CFE24AFEA410018889C /* Peru_Apps_Technical_TestUITests.swift */,
-				371A6D0024AFEA410018889C /* Info.plist */,
+				371A6D0F24B007710018889C /* Application */,
+				371A6D1424B00A870018889C /* Domain */,
+				37E811AD24B0DC8600804014 /* Infrastructure */,
 			);
-			path = "Peru Apps Technical TestUITests";
+			path = Login;
+			sourceTree = "<group>";
+		};
+		371A6D0F24B007710018889C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				371A6D1024B0077E0018889C /* Presentation */,
+				371A6D1124B0085A0018889C /* UseCases */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		371A6D1024B0077E0018889C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				371A6D0C24AFF9000018889C /* LoginViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		371A6D1124B0085A0018889C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				371A6D1224B009E80018889C /* LoginUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		371A6D1424B00A870018889C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				371A6D1524B00AB40018889C /* Entities */,
+				371A6D1824B00B1B0018889C /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		371A6D1524B00AB40018889C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				371A6D1624B00ACC0018889C /* User.swift */,
+				374EDDE924B199CB00AEA3F2 /* UserLoginResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		371A6D1824B00B1B0018889C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				371A6D1924B00B510018889C /* LoginRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		374EDDD424B16FFE00AEA3F2 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDD524B1700D00AEA3F2 /* Application */,
+				374EDDDF24B18A3500AEA3F2 /* Domain */,
+				374EDDDB24B189A000AEA3F2 /* Infraestructure */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		374EDDD524B1700D00AEA3F2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDD624B1702200AEA3F2 /* Presentation */,
+				374EDDE424B18D1D00AEA3F2 /* UseCases */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		374EDDD624B1702200AEA3F2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDD724B1705E00AEA3F2 /* MovieTableViewController.swift */,
+				374EDDD924B1722800AEA3F2 /* MovieTableViewCell.swift */,
+				370AEC0624B2FBE80007898B /* MovieDetailViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		374EDDDB24B189A000AEA3F2 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDDC24B189B400AEA3F2 /* Repositories */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		374EDDDC24B189B400AEA3F2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDDD24B189EE00AEA3F2 /* MoviesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		374EDDDF24B18A3500AEA3F2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDE024B18A4500AEA3F2 /* Entities */,
+				374EDDE124B18A5000AEA3F2 /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		374EDDE024B18A4500AEA3F2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDE224B18A6E00AEA3F2 /* Movie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		374EDDE124B18A5000AEA3F2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDE524B18D5700AEA3F2 /* MovieRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		374EDDE424B18D1D00AEA3F2 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				374EDDE724B18ED000AEA3F2 /* MovieUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		37E811AD24B0DC8600804014 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				37E811AE24B0DCA100804014 /* Repositories */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		37E811AE24B0DCA100804014 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				37E811AF24B0DCDB00804014 /* LoginRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +305,9 @@
 			dependencies = (
 			);
 			name = "Peru Apps Technical Test";
+			packageProductDependencies = (
+				374EDDEC24B19C7600AEA3F2 /* KeychainSwift */,
+			);
 			productName = "Peru Apps Technical Test";
 			productReference = 371A6CD924AFEA3E0018889C /* Peru Apps Technical Test.app */;
 			productType = "com.apple.product-type.application";
@@ -166,24 +330,6 @@
 			productReference = 371A6CEF24AFEA410018889C /* Peru Apps Technical TestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		371A6CF924AFEA410018889C /* Peru Apps Technical TestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 371A6D0924AFEA410018889C /* Build configuration list for PBXNativeTarget "Peru Apps Technical TestUITests" */;
-			buildPhases = (
-				371A6CF624AFEA410018889C /* Sources */,
-				371A6CF724AFEA410018889C /* Frameworks */,
-				371A6CF824AFEA410018889C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				371A6CFC24AFEA410018889C /* PBXTargetDependency */,
-			);
-			name = "Peru Apps Technical TestUITests";
-			productName = "Peru Apps Technical TestUITests";
-			productReference = 371A6CFA24AFEA410018889C /* Peru Apps Technical TestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +346,6 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 371A6CD824AFEA3E0018889C;
 					};
-					371A6CF924AFEA410018889C = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 371A6CD824AFEA3E0018889C;
-					};
 				};
 			};
 			buildConfigurationList = 371A6CD424AFEA3E0018889C /* Build configuration list for PBXProject "Peru Apps Technical Test" */;
@@ -215,13 +357,15 @@
 				Base,
 			);
 			mainGroup = 371A6CD024AFEA3E0018889C;
+			packageReferences = (
+				374EDDEB24B19C7600AEA3F2 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 371A6CDA24AFEA3E0018889C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				371A6CD824AFEA3E0018889C /* Peru Apps Technical Test */,
 				371A6CEE24AFEA410018889C /* Peru Apps Technical TestTests */,
-				371A6CF924AFEA410018889C /* Peru Apps Technical TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +388,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		371A6CF824AFEA410018889C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,9 +395,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374EDDE624B18D5700AEA3F2 /* MovieRepositoryProtocol.swift in Sources */,
+				374EDDEA24B199CB00AEA3F2 /* UserLoginResponse.swift in Sources */,
+				374EDDDA24B1722800AEA3F2 /* MovieTableViewCell.swift in Sources */,
+				371A6D0D24AFF9000018889C /* LoginViewController.swift in Sources */,
+				374EDDE324B18A6E00AEA3F2 /* Movie.swift in Sources */,
+				37E811B024B0DCDB00804014 /* LoginRepository.swift in Sources */,
+				370AEC0724B2FBE80007898B /* MovieDetailViewController.swift in Sources */,
+				374EDDDE24B189EE00AEA3F2 /* MoviesRepository.swift in Sources */,
 				371A6CE124AFEA3E0018889C /* ViewController.swift in Sources */,
+				371A6D1724B00ACC0018889C /* User.swift in Sources */,
+				371A6D1A24B00B510018889C /* LoginRepositoryProtocol.swift in Sources */,
 				371A6CDD24AFEA3E0018889C /* AppDelegate.swift in Sources */,
+				374EDDD824B1705E00AEA3F2 /* MovieTableViewController.swift in Sources */,
 				371A6CDF24AFEA3E0018889C /* SceneDelegate.swift in Sources */,
+				374EDDE824B18ED000AEA3F2 /* MovieUseCase.swift in Sources */,
+				371A6D1324B009E80018889C /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +418,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3769C6E724B0F54700D22528 /* Login_Tests.swift in Sources */,
 				371A6CF424AFEA410018889C /* Peru_Apps_Technical_TestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		371A6CF624AFEA410018889C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				371A6CFF24AFEA410018889C /* Peru_Apps_Technical_TestUITests.swift in Sources */,
+				3769C6E524B0F3A300D22528 /* LoginRepository.swift in Sources */,
+				3769C6E824B0F5BA00D22528 /* LoginRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +432,6 @@
 			isa = PBXTargetDependency;
 			target = 371A6CD824AFEA3E0018889C /* Peru Apps Technical Test */;
 			targetProxy = 371A6CF024AFEA410018889C /* PBXContainerItemProxy */;
-		};
-		371A6CFC24AFEA410018889C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 371A6CD824AFEA3E0018889C /* Peru Apps Technical Test */;
-			targetProxy = 371A6CFB24AFEA410018889C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,6 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5DZX4N5C6;
 				INFOPLIST_FILE = "Peru Apps Technical Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +599,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5DZX4N5C6;
 				INFOPLIST_FILE = "Peru Apps Technical Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,7 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5DZX4N5C6;
 				INFOPLIST_FILE = "Peru Apps Technical TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +641,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5DZX4N5C6;
 				INFOPLIST_FILE = "Peru Apps Technical TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,46 +652,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peru Apps Technical Test.app/Peru Apps Technical Test";
-			};
-			name = Release;
-		};
-		371A6D0A24AFEA410018889C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5DZX4N5C6;
-				INFOPLIST_FILE = "Peru Apps Technical TestUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolasr.Peru-Apps-Technical-TestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Peru Apps Technical Test";
-			};
-			name = Debug;
-		};
-		371A6D0B24AFEA410018889C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5DZX4N5C6;
-				INFOPLIST_FILE = "Peru Apps Technical TestUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolasr.Peru-Apps-Technical-TestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Peru Apps Technical Test";
 			};
 			name = Release;
 		};
@@ -583,16 +685,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		371A6D0924AFEA410018889C /* Build configuration list for PBXNativeTarget "Peru Apps Technical TestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				371A6D0A24AFEA410018889C /* Debug */,
-				371A6D0B24AFEA410018889C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		374EDDEB24B19C7600AEA3F2 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		374EDDEC24B19C7600AEA3F2 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 374EDDEB24B19C7600AEA3F2 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 371A6CD124AFEA3E0018889C /* Project object */;
 }
