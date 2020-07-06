@@ -6,32 +6,36 @@
 //
 
 import XCTest
+import Foundation
 import Combine
+
 @testable import Peru_Apps_Technical_Test
 
-class Login_Tests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class Login_Tests: XCTestCase {
+    var repository: LoginRepositoryProtocol!
+    var cancelables = Set<AnyCancellable>()
+    
+    override func setUp() {
+        self.repository = LoginRepository()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        self.repository = nil
     }
-
+    
     // Repositories
-    func LoginRepository() throws {
-        // This is an example of a functional test case.
-        var repository: LoginRepository = LoginRepository()
-        repository.login(with: "peruapps0@peruapps.com", password: "password0")
+    func login_Test() throws {
+        let expectation = self.expectation(description: "login callback")
         
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        repository.loginWith(email: "peruapps0@peruapps.com", password: "password0")
+            .sink { completion in
+                print("Finish")
+            } receiveValue: { value in
+                XCTAssertEqual(201, value.status)
+                expectation.fulfill()
+            }.store(in: &cancelables)
+        
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
 }

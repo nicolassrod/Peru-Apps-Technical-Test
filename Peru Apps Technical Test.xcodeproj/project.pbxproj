@@ -19,6 +19,9 @@
 		371A6D1324B009E80018889C /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1224B009E80018889C /* LoginUseCase.swift */; };
 		371A6D1724B00ACC0018889C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1624B00ACC0018889C /* User.swift */; };
 		371A6D1A24B00B510018889C /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1924B00B510018889C /* LoginRepositoryProtocol.swift */; };
+		372A5BC524B38B6C00B91CC3 /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDE924B199CB00AEA3F2 /* UserLoginResponse.swift */; };
+		372A5BC624B38B7D00B91CC3 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1224B009E80018889C /* LoginUseCase.swift */; };
+		372A5BC724B38B8400B91CC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6D1624B00ACC0018889C /* User.swift */; };
 		374EDDD824B1705E00AEA3F2 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDD724B1705E00AEA3F2 /* MovieTableViewController.swift */; };
 		374EDDDA24B1722800AEA3F2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDD924B1722800AEA3F2 /* MovieTableViewCell.swift */; };
 		374EDDDE24B189EE00AEA3F2 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374EDDDD24B189EE00AEA3F2 /* MoviesRepository.swift */; };
@@ -419,9 +422,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3769C6E724B0F54700D22528 /* Login_Tests.swift in Sources */,
+				372A5BC524B38B6C00B91CC3 /* UserLoginResponse.swift in Sources */,
 				371A6CF424AFEA410018889C /* Peru_Apps_Technical_TestTests.swift in Sources */,
 				3769C6E524B0F3A300D22528 /* LoginRepository.swift in Sources */,
 				3769C6E824B0F5BA00D22528 /* LoginRepositoryProtocol.swift in Sources */,
+				372A5BC624B38B7D00B91CC3 /* LoginUseCase.swift in Sources */,
+				372A5BC724B38B8400B91CC3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
