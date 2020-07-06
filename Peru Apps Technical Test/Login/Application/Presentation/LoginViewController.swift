@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
             guard let token = loginData?.data.token else {
                 return
             }
-            loginUseCase.save(token: token)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            _ = loginUseCase.save(token: token)
+            DispatchQueue.main.async {
                 self.showHomeViewController()
             }
         }

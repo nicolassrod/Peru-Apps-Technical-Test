@@ -12,7 +12,8 @@ class MovieTableViewController: UITableViewController {
     private let cellMovieRowIdentifier = "movie_row"
     
     var cancellables = Set<AnyCancellable>()
-    var loginRepository: LoginRepository!
+    var movieUseCase = MovieUseCase(repository: MoviesRepository())
+    var loginUseCase = LoginUseCase(repository: LoginRepository())
     
     var movies: Movie? {
         didSet {
@@ -33,7 +34,7 @@ class MovieTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.dataSource = dataSource
-        MovieUseCase(repository: MoviesRepository())
+        movieUseCase
             .getMovies()
             .sink(receiveCompletion: { completion in
                 print(completion)
@@ -45,7 +46,7 @@ class MovieTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "movie_detail" {
             if let movieDetailTableViewController = segue.destination as? MovieDetailViewController {
-                if let detail = self.movieSelected {
+                if let detail = sender as? Detail {
                     movieDetailTableViewController.detail = detail
                 }
             }
@@ -55,8 +56,21 @@ class MovieTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detail = movies?.data[indexPath.row].detail
         self.movieSelected = detail
-        performSegue(withIdentifier: "movie_detail", sender: nil)
+        performSegue(withIdentifier: "movie_detail", sender: detail)
     }
+    
+    @IBAction func logOut(_ sender: UIBarButtonItem) {
+        loginUseCase.logOut()
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+            loginViewController.modalPresentationStyle = .fullScreen
+            self.present(loginViewController, animated: true, completion: nil)
+            
+//            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }
 
 extension MovieTableViewController {

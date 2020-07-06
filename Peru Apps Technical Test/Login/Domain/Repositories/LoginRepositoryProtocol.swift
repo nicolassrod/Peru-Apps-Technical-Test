@@ -10,6 +10,7 @@ import Combine
 
 protocol LoginRepositoryProtocol {
     func loginWith(email: String, password: String) -> AnyPublisher<UserLoginResponse, Error>
+    func logOut()
     func save(token: String) -> Bool
     func getToken() -> String
 }

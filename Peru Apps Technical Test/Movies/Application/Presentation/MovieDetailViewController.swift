@@ -8,7 +8,7 @@
 import UIKit
 
 class MovieDetailViewController: UIViewController {
-    var detail: Detail!
+    var detail: Detail?
     
     @IBOutlet weak var MovieImage: UIImageView!
     @IBOutlet weak var MovieTitle: UILabel!
@@ -17,6 +17,7 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let detail = detail else { return }
         if let url = URL(string: detail.img) {
             DispatchQueue.global().async { [weak self] in
                 if let data = try? Data(contentsOf: url) {
@@ -28,19 +29,8 @@ class MovieDetailViewController: UIViewController {
                 }
             }
         }
+        
         MovieTitle.text = detail.title
         MovieDescription.text = detail.description
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

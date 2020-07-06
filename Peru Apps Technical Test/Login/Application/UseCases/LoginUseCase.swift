@@ -18,4 +18,8 @@ struct LoginUseCase {
     func save(token: String) -> Bool{
         repository.save(token: token)
     }
+    
+    func logOut() {
+        repository.logOut()
+    }
 }

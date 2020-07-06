@@ -10,6 +10,8 @@ import Combine
 import KeychainSwift
 
 struct LoginRepository: LoginRepositoryProtocol {
+    let keychain = KeychainSwift()
+    
     func loginWith(email: String, password: String) -> AnyPublisher<UserLoginResponse, Error> {
         var urlRequest = URLRequest(url: URL(string: "http://api-movies.pappstest.com/api/v1/auth/login")!)
         urlRequest.httpMethod = "POST"
@@ -25,13 +27,15 @@ struct LoginRepository: LoginRepositoryProtocol {
             .eraseToAnyPublisher()
     }
     
+    func logOut() {
+        keychain.delete("bearer-token")
+    }
+    
     func save(token: String) -> Bool {
-        let keychain = KeychainSwift()
         return keychain.set(token, forKey: "bearer-token")
     }
     
     func getToken() -> String {
-        let keychain = KeychainSwift()
         let data = keychain.getData("bearer-token")
         return String(data: data!, encoding: .utf8)!
     }
